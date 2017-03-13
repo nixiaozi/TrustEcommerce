@@ -98,9 +98,19 @@
     <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Bootstrap\css\bootstrap.css" />
     <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\css\jquery-ui.css" />
+    <Content Include="Bootstrap\css\jquery-ui.min.css" />
+    <Content Include="Bootstrap\css\jquery-ui.structure.css" />
+    <Content Include="Bootstrap\css\jquery-ui.structure.min.css" />
+    <Content Include="Bootstrap\css\jquery-ui.theme.css" />
+    <Content Include="Bootstrap\css\jquery-ui.theme.min.css" />
     <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\handlebars-v4.0.5.js" />
+    <Content Include="Bootstrap\js\handlebars.runtime-v4.0.5.js" />
+    <Content Include="Bootstrap\js\jquery-ui.js" />
+    <Content Include="Bootstrap\js\jquery-ui.min.js" />
     <Content Include="Bootstrap\js\npm.js" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
@@ -124,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap\js\jquery.min.js" />
+    <Content Include="SearchBar_tmp.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

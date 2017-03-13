@@ -4,13 +4,57 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>测试</title>
 	<meta charset="utf-8" />
+    <link rel="stylesheet"   href="Bootstrap/css/jquery-ui.min.css" />
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
     <script src="Bootstrap/js/jquery.min.js"></script>
+    <script src="Bootstrap/js/jquery-ui.js"></script>
     <script src="Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Bootstrap/js/handlebars-v4.0.5.js"></script>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+                {{body}}
+            </div>
+        </div>
+    </script>
 </head>
 <body>
     <div>这是一个用来测试Jquery 插件的页面：</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- 区间用来生成控件 -->
+                <div id="TheSearchBar">
+                    <script>
+                        $(document).ready(function () {
+                             
+                            var source = $("#entry-template").html();
+                            var template = Handlebars.compile(source);
+
+                            var context = { title: "<p>My New Post</p>", body: "This is my first post!" };
+                            var html = template(context);
+                            console.log(html);
+                        })
+
+                        var TheSearchBar_Data = {
+                            Theme: "",
+                            SearchList: [
+                                { SearchTab: "Tab1", SearchUrl: "~/Search.aspx" },
+                                { SearchTab: "Tab2", SearchUrl: "~/Search2.aspx" },
+                            ]
+                        };
+                    </script>
+                </div>
+                <!-- 区间用来生成控件 -->
+            </div>
+        </div>
+    </div>
+
     
+    <script>
+        $.widget("nmk.SearchBar_TBType", {});
+    </script>
 
 
 </body>
