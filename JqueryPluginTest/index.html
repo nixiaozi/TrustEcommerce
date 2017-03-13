@@ -18,33 +18,51 @@
             </div>
         </div>
     </script>
+    <style>
+        .logo-bd {
+    display: block;
+    margin-top: 20px;
+    margin-left: 22px;
+    padding-top: 58px;
+    width: 142px;
+    height: 0;
+    background: url(//img.alicdn.com/tps/i2/TB1bNE7LFXXXXaOXFXXwFSA1XXX-292-116.png_145x145.jpg) no-repeat;
+}
+    </style>
 </head>
 <body>
     <div>这是一个用来测试Jquery 插件的页面：</div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
                 <!-- 区间用来生成控件 -->
-                <div id="TheSearchBar">
-                    <script>
-                        $(document).ready(function () {
-                             
-                            var source = $("#entry-template").html();
-                            var template = Handlebars.compile(source);
-
-                            var context = { title: "<p>My New Post</p>", body: "This is my first post!" };
-                            var html = template(context);
-                            console.log(html);
-                        })
-
-                        var TheSearchBar_Data = {
-                            Theme: "",
-                            SearchList: [
-                                { SearchTab: "Tab1", SearchUrl: "~/Search.aspx" },
-                                { SearchTab: "Tab2", SearchUrl: "~/Search2.aspx" },
-                            ]
-                        };
-                    </script>
+                <div id="Top2" class="Top2-top">
+                    <div class="logo col-xs-3">
+                        <a href="//www.taobao.com?spm=a21bo.50862.201857.1.xudllF" 
+                           class="logo-bd clearfix" data-spm-anchor-id="a21bo.50862.201857.1">淘宝</a>
+                    </div>
+                    <div id="TheSearchBar col-xs-4">
+                        <ul class="searchbar-ul">
+                            <li class="searchbar-ul">
+                                宝贝
+                            </li>
+                            <li class="searchbar-ul">
+                                店铺
+                            </li>
+                            <li class="searchbar-ul">
+                                新品
+                            </li>
+                        </ul>
+                        <div class="searchbar-inputdiv">
+                            <i class="glyphicon glyphicon-search glyphicon-3x  searchbar-inputdiv-searchicon"></i>
+                            <label class="searchbar-inputdiv-lable"></label>
+                            <i class="glyphicon glyphicon-camera searchbar-inputdiv-camera"></i>
+                            <input class="searchbar-inputdiv-input" />
+                        </div>
+                        <div class="searchbar-buttondiv col-xs-2">
+                            <button id="TheSearchBar_Submit" class="searchbar-buttondiv-button">搜索</button>
+                        </div>
+                    </div>
                 </div>
                 <!-- 区间用来生成控件 -->
             </div>
