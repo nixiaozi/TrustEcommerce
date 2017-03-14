@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsPlugins", "JsPlugins", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JqueryPluginTest", "JqueryPluginTest\JqueryPluginTest.csproj", "{0680D0F8-6417-47B6-9263-6ED70106E43A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasePluginTest", "BasePluginTest\BasePluginTest.csproj", "{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{0680D0F8-6417-47B6-9263-6ED70106E43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0680D0F8-6417-47B6-9263-6ED70106E43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0680D0F8-6417-47B6-9263-6ED70106E43A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,6 @@ Global
 		{7BE2BCCF-0069-432C-89AD-F195252B86E3} = {B98739B3-A8E1-49A0-B6E6-A38312BA04BD}
 		{7401D5BB-8E33-4461-A04E-0A425BF56A98} = {8C910213-DF92-4229-9C58-F4C10D5F6855}
 		{0680D0F8-6417-47B6-9263-6ED70106E43A} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
+		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
 	EndGlobalSection
 EndGlobal
