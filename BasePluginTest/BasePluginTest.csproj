@@ -94,12 +94,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ColorChange.html" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\style.css" />
     <Content Include="CustomProgress.html" />
+    <Content Include="js\ColorChange.js" />
+    <Content Include="js\jquery-ui.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="js\custom-progressbar.js" />
+    <Content Include="js\jquery-1.12.4.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
