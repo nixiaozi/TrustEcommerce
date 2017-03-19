@@ -1,0 +1,20 @@
+﻿<div class="Top2-top">
+    <div>
+        <a href="{{LogoUrl}}"
+           class="logo-bd clearfix">淘宝</a>
+    </div>
+    <div class="TheSearchBar col-sm-5">
+        <ul class="searchbar-ul">
+            {{#each searchType}}
+            <li class="searchbar-li" data-url="{{Url}}">
+                {{Name}}
+            </li>
+            {{/each}}
+        </ul>
+        <div>
+            <i></i>
+            <input placeholder="输入需要搜索的内容" />
+            <button>搜索</button>
+        </div>
+    </div>
+</div>

@@ -94,37 +94,36 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\css\bootstrap-theme.css" />
-    <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
-    <Content Include="Bootstrap\css\bootstrap.css" />
-    <Content Include="Bootstrap\css\bootstrap.min.css" />
-    <Content Include="Bootstrap\css\jquery-ui.css" />
-    <Content Include="Bootstrap\css\jquery-ui.min.css" />
-    <Content Include="Bootstrap\css\jquery-ui.structure.css" />
-    <Content Include="Bootstrap\css\jquery-ui.structure.min.css" />
-    <Content Include="Bootstrap\css\jquery-ui.theme.css" />
-    <Content Include="Bootstrap\css\jquery-ui.theme.min.css" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Bootstrap\js\bootstrap.js" />
-    <Content Include="Bootstrap\js\bootstrap.min.js" />
-    <Content Include="Bootstrap\js\handlebars-v4.0.5.js" />
-    <Content Include="Bootstrap\js\handlebars.runtime-v4.0.5.js" />
-    <Content Include="Bootstrap\js\jquery-ui.js" />
-    <Content Include="Bootstrap\js\jquery-ui.min.js" />
-    <Content Include="Bootstrap\js\npm.js" />
+    <Content Include="Script\css\bootstrap-theme.css" />
+    <Content Include="Script\css\bootstrap-theme.min.css" />
+    <Content Include="Script\css\bootstrap.css" />
+    <Content Include="Script\css\bootstrap.min.css" />
+    <Content Include="Script\css\jquery-ui.css" />
+    <Content Include="Script\css\jquery-ui.min.css" />
+    <Content Include="Script\css\jquery-ui.structure.css" />
+    <Content Include="Script\css\jquery-ui.structure.min.css" />
+    <Content Include="Script\css\jquery-ui.theme.css" />
+    <Content Include="Script\css\jquery-ui.theme.min.css" />
+    <Content Include="Script\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Script\js\bootstrap.js" />
+    <Content Include="Script\js\bootstrap.min.js" />
+    <Content Include="Script\js\handlebars-v4.0.5.js" />
+    <Content Include="Script\js\handlebars.runtime-v4.0.5.js" />
+    <Content Include="Script\js\jquery-ui.js" />
+    <Content Include="Script\js\jquery-ui.min.js" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Bootstrap\css\bootstrap-theme.css.map" />
-    <Content Include="Bootstrap\css\bootstrap-theme.min.css.map" />
-    <Content Include="Bootstrap\css\bootstrap.css.map" />
-    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Script\css\bootstrap-theme.css.map" />
+    <Content Include="Script\css\bootstrap-theme.min.css.map" />
+    <Content Include="Script\css\bootstrap.css.map" />
+    <Content Include="Script\css\bootstrap.min.css.map" />
+    <Content Include="Script\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Script\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Script\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Script\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,16 +132,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\js\jquery.min.js" />
-    <Content Include="SearchBar_tmp.html" />
+    <Content Include="Script\js\jquery.min.js" />
+    <Content Include="Script\TheCustomPlugin\custom.css" />
+    <Content Include="Script\TheCustomPlugin\customjs.js" />
+    <Content Include="plugin_tmp.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Script\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
