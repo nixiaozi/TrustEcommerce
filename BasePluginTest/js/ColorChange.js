@@ -58,7 +58,7 @@
             // Trigger an event, check if it's canceled
             if (this._trigger("random", event, colors) !== false) { //这里的Random是在option中的callback
                 console.log("public random before option");
-                this.option(colors);
+                this.option(colors);  //这个重新设置控件的属性值会自动调用_refush 方法
                 console.log("public random after option");
             }
         },
