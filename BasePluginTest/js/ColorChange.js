@@ -19,7 +19,7 @@
               // add a class for theming
               .addClass("custom-colorize");
 
-            this.changer = $("<button>", {
+            this.changer = $("<button>", {  //这里为对象定义了一个新的属性changer包括一个按钮节点以及集成button的event
                 text: "change",
                 "class": "custom-colorize-changer"
             })

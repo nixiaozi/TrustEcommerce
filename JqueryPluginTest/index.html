@@ -4,12 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>测试</title>
 	<meta charset="utf-8" />
-    <link rel="stylesheet"   href="Bootstrap/css/jquery-ui.min.css" />
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css" />
-    <script src="Bootstrap/js/jquery.min.js"></script>
-    <script src="Bootstrap/js/jquery-ui.js"></script>
-    <script src="Bootstrap/js/bootstrap.min.js"></script>
-    <script src="Bootstrap/js/handlebars-v4.0.5.js"></script>
+    <link rel="stylesheet"   href="Script/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="Script/css/bootstrap.min.css" />
+    <script src="Script/js/jquery-min.js"></script>
+    <script src="Script/js/jquery-ui.js"></script>
+    <script src="Script/js/bootstrap.min.js"></script>
+    <script src="Script/js/handlebars-v4.0.5.js"></script>
+    <script src="Script/TheCustomPlugin/TbSearchBar.js"></script>
     <script id="entry-template" type="text/x-handlebars-template">
         <div class="entry">
             <h1>{{title}}</h1>
@@ -115,7 +116,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <!-- 区间用来生成控件 -->
-                
+                <button id="testsearch">主页测试</button>
+                <div id="getBar"></div>
+                <div id="setTheBase"></div>
                 <!-- 区间用来生成控件 -->
             </div>
         </div>
@@ -124,7 +127,24 @@
     
     <script>
         //$.widget("nmk.SearchBar_TBType", {});
+        $(document).ready(function () {
+            $("#testsearch").bind("click", function () {
+                alert("Main Page Test!");
+            });
 
+            $("#getBar").TbSearchBar({
+                data: {
+                    LogoUrl: "http://www.baidu.com",
+                    searchType: [
+                        { Url: "#test1", Name: "test1" },
+                        { Url: "#test2", Name: "test2" }
+                    ]
+                }
+            });
+
+            $("#setTheBase").TbSearchBar();
+
+        });
     </script>
 
 

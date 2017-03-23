@@ -132,9 +132,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Script\js\jquery.min.js" />
-    <Content Include="Script\TheCustomPlugin\custom.css" />
-    <Content Include="Script\TheCustomPlugin\customjs.js" />
+    <Content Include="Script\js\jquery-min.js" />
+    <Content Include="Script\TheCustomPlugin\TbSearchBar.css" />
+    <Content Include="Script\TheCustomPlugin\TbSearchBar.js" />
     <Content Include="plugin_tmp.html" />
     <Content Include="Web.config" />
   </ItemGroup>
