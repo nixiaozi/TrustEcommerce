@@ -45,6 +45,10 @@
             var thehtml = template($target.options.data);
             $(thehtml).appendTo($target.element);
             //alert("GEt done!");
+            //查看当前元素的位置确定显示的方式
+
+            $target.element.find("li:first").attr("class", "searchbar-li active")
+
             $target.element.find("button").bind("click", function () {
                 var theval = $target.element.find("input").val();
                 alert("Plugin Button Test:"+theval);
