@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Script\css\base.css" />
     <Content Include="Script\css\bootstrap-theme.css" />
     <Content Include="Script\css\bootstrap-theme.min.css" />
     <Content Include="Script\css\bootstrap.css" />
@@ -105,6 +106,7 @@
     <Content Include="Script\css\jquery-ui.theme.css" />
     <Content Include="Script\css\jquery-ui.theme.min.css" />
     <Content Include="Script\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Script\js\base.js" />
     <Content Include="Script\js\bootstrap.js" />
     <Content Include="Script\js\bootstrap.min.js" />
     <Content Include="Script\js\handlebars-v4.0.5.js" />
