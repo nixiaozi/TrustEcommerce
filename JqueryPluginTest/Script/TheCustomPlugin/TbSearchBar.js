@@ -50,12 +50,24 @@
             $target.element.find("li:first").attr("class", "searchbar-li active")
 
             $target._on($target.element.find("button"),{
-                click: function () {
+                click: function (event) {
                     var theval = $target.element.find("input").val();
                     alert("Plugin Button Test:"+theval);
                 },
                 
             });
+
+            $target._on($target.element.find(".searchbar-ul"), {
+                click: this._searchBarevent,
+            })
+
+            //isScrolledIntoView 区分绑定li click event
+            if (!$target.isScrolledIntoView()) {
+                $target._on($target.element.find(".searchbar-fix-ul"), {
+                    mouseout: this._searchFixBarOutevent,
+                    mouseover:this._searchFixBarOverevent,
+                });
+            } 
 
             $target._on(window, {
                 scroll: function () {
@@ -63,12 +75,22 @@
                         $target.element.find(".searchbar-inputdiv-searchicon").show();
                         $('.searchbar-fix-ul').addClass('searchbar-ul').removeClass('searchbar-fix-ul');
                         $('.searchbar-fix-li').addClass('searchbar-li').removeClass('searchbar-fix-li');
-                        
+                        this.element.find('.searchbar-li').css("display", "inline-block")
+                        this.element.find('.searchbar-li:not(.active)').show();
+                        $target._off($target.element.find(".searchbar-fix-ul"), "mouseout");
+                        $target._off($target.element.find(".searchbar-fix-ul"), "onmouseover");
                         //alert("true scroll");
                     } else {
                         $target.element.find(".searchbar-inputdiv-searchicon").hide();
                         $('.searchbar-ul').addClass('searchbar-fix-ul').removeClass('searchbar-ul');
                         $('.searchbar-li').addClass('searchbar-fix-li').removeClass('searchbar-li');
+                        this.element.find('.searchbar-fix-li:not(.active)').hide();
+                        $target._off($target.element.find(".searchbar-fix-ul"), "mouseout");
+                        $target._off($target.element.find(".searchbar-fix-ul"), "onmouseover");
+                        $target._on($target.element.find(".searchbar-fix-ul"), {
+                            mouseout: this._searchFixBarOutevent,
+                            mouseover: this._searchFixBarOverevent,
+                        });
                         //alert("false scroll");
                     }
                 }
@@ -79,6 +101,22 @@
             //    alert("Plugin Button Test:"+theval);
             //});
         },
+        //_searchBarevent;
+        _searchBarevent:function(event){
+            $li = $(event.target);
+            this.element.find("li.active").removeClass("active");
+            $li.addClass("active");
+            this._trigger("mouseout");
+        },
+        //_searchFixBarevent
+        _searchFixBarOverevent:function(){
+            this.element.find('.searchbar-fix-li').css("display", "list-item");
+            this.element.find('.searchbar-fix-li:not(.active)').show();
+        },
+        _searchFixBarOutevent:function(){
+            this.element.find('.searchbar-fix-li:not(.active)').hide();
+        },
+
         _refreash: function () {
             //_refreash 刷新函数初始化
             alert("fsda!");
