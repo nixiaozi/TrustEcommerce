@@ -1,0 +1,33 @@
+﻿.mainmenu-summary{
+    padding: 1em 0em;
+    height: 25em;
+}
+.mainmenu-ul{
+    background-color: #dfd;
+    align-items: center;
+    padding: 0em;
+    border-top: #443c3c solid 3px;
+    border-bottom: #443c3c solid 3px;
+}
+.mainmenu-header{
+    display: block;
+    border: #000 solid 1px;
+    padding: 0.5em;
+}
+.mainmenu-li{
+    display: block;
+    border: #000 solid 1px;
+    padding: 0.5em;
+}
+
+.mainmenu-li:hover{
+    border-right-color: #dfd;
+    border-right-width: 5px;
+}
+
+
+.mainmenu-detail{
+    margin: 3.68em 0em;
+    background-color: #dfd;
+    min-height: 10em;
+}

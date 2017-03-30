@@ -1,0 +1,28 @@
+﻿{
+  "Mainmenu": [
+    {
+      "item": [
+        {
+          "title": "test1",
+          "detail": [1,2,3,454,345,436,463,643,643,"tetwer"]
+        },
+        { "title": "test1" },
+        { "title": "test1" }
+      ]
+    },
+    {
+      "item": [
+        { "title": "test2" },
+        { "title": "test2" },
+        { "title": "test2" }
+      ]
+    },
+    {
+      "item": [
+        { "title": "test3" },
+        { "title": "test3" },
+        { "title": "test3" }
+      ]
+    }
+  ]
+}
