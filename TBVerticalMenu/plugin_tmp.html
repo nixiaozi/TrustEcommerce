@@ -4,7 +4,10 @@
             <ul class="mainmenu-ul">
                 <content class="mainmenu-header">全部商品分类<span style="left:0.2em"><i class="glyphicon glyphicon-bookmark"></i></span></content>
                 {{#each Mainmenu}}
-                <li id="mainmenu-{{@index}}"  class="mainmenu-li">{{#join item delimiter="/"}}<a href="#">{{title}}</a>{{/join}}</li>
+                <li id="mainmenu-{{@index}}"  class="mainmenu-li">
+                    <i class="glyphicon glyphicon-pushpin"></i>
+                    {{#join item delimiter="/"}}<a href="#">{{title}}</a>{{/join}}
+                </li>
                 {{/each}}
             </ul>
         </div>
