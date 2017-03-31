@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasePluginTest", "BasePlugi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBVerticalMenu", "TBVerticalMenu\TBVerticalMenu.csproj", "{B56754E6-E326-4CA3-A485-0082AD2B4B49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handlerTest", "handlerTest\handlerTest.csproj", "{F46123DE-E681-4762-A355-07DEE3C3CADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{B56754E6-E326-4CA3-A485-0082AD2B4B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56754E6-E326-4CA3-A485-0082AD2B4B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56754E6-E326-4CA3-A485-0082AD2B4B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F46123DE-E681-4762-A355-07DEE3C3CADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F46123DE-E681-4762-A355-07DEE3C3CADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F46123DE-E681-4762-A355-07DEE3C3CADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F46123DE-E681-4762-A355-07DEE3C3CADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,5 +84,6 @@ Global
 		{0680D0F8-6417-47B6-9263-6ED70106E43A} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
 		{84D7B4A0-F8B8-4DEB-BC0E-D7A2506A26C6} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
 		{B56754E6-E326-4CA3-A485-0082AD2B4B49} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
+		{F46123DE-E681-4762-A355-07DEE3C3CADC} = {D72772B8-306E-416C-B4DD-F6BAF0F0BAFB}
 	EndGlobalSection
 EndGlobal

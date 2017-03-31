@@ -3,9 +3,9 @@
         <div class="col-sm-3 mainmenu-summary">
             <ul class="mainmenu-ul">
                 <content class="mainmenu-header">全部商品分类</content>
-                <li class="mainmenu-li">test1</li>
-                <li class="mainmenu-li">test2</li>
-                <li class="mainmenu-li">test3</li>
+                {{#each Mainmenu}}
+                <li id="mainmenu-{{@index}}"  class="mainmenu-li">{{#join item delimiter="、"}}({{summary}})<a href="#">{{title}}</a>{{/join}}</li>
+                {{/each}}
             </ul>
         </div>
         <div class="col-sm-9 mainmenu-detail">

@@ -14,6 +14,18 @@
     <script src="Script/TheCustomPlugin/base.js"></script>
     <script src="Script/TheCustomPlugin/customjs.js">
     </script>
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <ul>
+                <content>所有商品类别</content>
+                {{#each Mainmenu}}
+                    <li id="{{@index}}">{{#join item delimiter="、"}}({{summary}})<a href="#">{{title}}</a>{{/join}}</li>
+                {{/each}}
+            </ul>
+            
+        </div>
+    </script>
+
     <script>
         var thejson = {
             "Mainmenu": [
@@ -61,19 +73,39 @@
               }
             ]
         }
+
+
     </script>
 </head>
 <body>
     <!-- input时需要保证lable和icon的内容是隐藏的 -->
     <div>这是一个用来测试Jquery 插件的页面：</div>
-    <div id="mainMenu">
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- 区间用来生成控件 -->
+                <div id="test">
+
+                </div>
+                <div id="templatetest"></div>
+                <!-- 区间用来生成控件 -->
+            </div>
+        </div>
     </div>
 
     
     <script>
         $(document).ready(function () {
-            var theobject = $("#mainMenu").VerticalMenu({data:thejson});
+            $("#test").text(thejson.Mainmenu[1].item[1].title);
+
+            var source = $("#entry-template").html();
+            var template = Handlebars.compile(source);
+
+            var context = thejson;
+            var html = template(context);
+
+            $('#templatetest').html(html);
         })
 
     </script>
