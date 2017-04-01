@@ -81,7 +81,7 @@
             this.element.find(".mainmenu-detail").html(thehtml);
         },
         //获得详细信息并且执行
-        _getdetailtempAndDo(itemid) {
+        _getdetailtempAndDo:function(itemid) {
             var $target = this;
             if (this.options.detailtemplate != null) {
                 $target._detailinit(itemid);//必须要指定this 否则无法找到该函数

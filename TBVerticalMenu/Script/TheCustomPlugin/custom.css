@@ -42,6 +42,10 @@
     color: #ff5400;
 }
 
+.mainmenu-li.active a{
+    color: #ff5400;
+}
+
 .mainmenu-li:hover a{
     color: #ff5400;
 }
