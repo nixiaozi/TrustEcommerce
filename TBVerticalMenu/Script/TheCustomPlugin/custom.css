@@ -1,6 +1,7 @@
 ﻿.mainmenu-summary{
     padding: 1em 0em;
     height: 25em;
+    z-index: 10;
 }
 .mainmenu-ul{
     background-color: #ff5400;
@@ -45,11 +46,44 @@
     color: #ff5400;
 }
 
+.mainmenu-row{
+    margin: 10px 10px;
+}
 
 .mainmenu-detail{
     margin: 3.68em 0em;
     background-color: #fff;
     min-height: 11em;
     border: #ff5400 solid 2px;
-    border-left: none;
+    left: -2px;
+}
+
+.mainmenu-detail-title {
+    border-bottom: #ddd solid 3px;
+}
+
+.mainmenu-detail-heard {
+    padding-left: 1em;
+    font-size: 1.2em;
+    color: #ff5400;
+}
+.mainmenu-detail-title span {
+    margin: 1em;
+    display: inline-block;
+    font-size: 1.2em;
+    color: #ff5400;
+}
+
+label.mainmenu-detail-list {
+    margin: 0.2em;
+    color: #888;
+    font-weight: 400;
+}
+
+img.main-detail-brandlist {
+    margin: 0.2em;
+}
+
+.col-xs-6.mainmenu-detail-title {
+    border-width: 7px;
 }

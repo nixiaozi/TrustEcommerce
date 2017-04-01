@@ -1,0 +1,27 @@
+﻿{{#each item}}
+<div class="row">
+    <div class="col-xs-4">
+        <div class="text-left mainmenu-detail-title">
+            <img class="mainmenu-detail-img" alt="{{title}}" src="{{tag}}" /><span class="mainmenu-detail-heard">{{title}}</span>
+        </div>
+
+        {{#each detail}}
+            <label class="mainmenu-detail-list">{{this}}</label>
+        {{/each}}
+    </div>
+    <div class="col-xs-8">
+        <div class="col-xs-6 mainmenu-detail-title">
+            <span>推荐店铺</span>
+        </div>
+        <div class="col-xs-6 text-right mainmenu-detail-title">
+            <span><a class="mainmenu-mainclass-url" data-title="{{title}}">查看更多>></a></span>
+        </div>
+
+        {{#each brand}}
+            <img src="{{this}}" class="main-detail-brandlist" />
+        {{/each}}
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+{{/each}}

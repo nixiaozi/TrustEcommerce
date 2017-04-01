@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="plugin_detail_tmp.html" />
     <Content Include="Script\css\bootstrap-theme.css" />
     <Content Include="Script\css\bootstrap-theme.min.css" />
     <Content Include="Script\css\bootstrap.css" />

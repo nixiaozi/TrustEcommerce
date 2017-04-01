@@ -1,17 +1,17 @@
 ﻿<div class="container">
-    <div class="row">
+    <div class="row mainmenu-row">
         <div class="col-sm-3 mainmenu-summary">
             <ul class="mainmenu-ul">
                 <content class="mainmenu-header">全部商品分类<span style="left:0.2em"><i class="glyphicon glyphicon-bookmark"></i></span></content>
                 {{#each Mainmenu}}
-                <li id="mainmenu-{{@index}}"  class="mainmenu-li">
+                <li data-id="{{@index}}"  class="mainmenu-li">
                     <i class="glyphicon glyphicon-pushpin"></i>
                     {{#join item delimiter="/"}}<a href="#">{{title}}</a>{{/join}}
                 </li>
                 {{/each}}
             </ul>
         </div>
-        <div class="col-sm-9 mainmenu-detail">
+        <div class="col-sm-9 mainmenu-detail" style="display:none;">
 
         </div>
     </div>
