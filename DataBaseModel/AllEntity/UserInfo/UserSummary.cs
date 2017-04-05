@@ -37,5 +37,8 @@ namespace DataBaseModel.AllEntity.UserInfo
 
         [Column(TypeName = "datetime")]
         public DateTime? LastActivityDateUtc { get; set; }
+
+        [StringLength(10, ErrorMessage = "验证码最多为10个字符")]
+        public string CurrentPaymentCode { get; set; }
     }
 }
