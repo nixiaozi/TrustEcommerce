@@ -22,8 +22,14 @@ namespace DataBaseModel.AllEntity.UserInfo
         [StringLength(20, ErrorMessage = "电话号码最多为20个字符")]
         public string PhoneNum { get; set; }
 
+        [StringLength(20, ErrorMessage = "电话号码最多为20个字符")]
+        public string OldPhoneNum { get; set; }
+
         [StringLength(100, ErrorMessage = "邮箱地址最多为100个字符")]
         public string Email { get; set; }
+
+        [StringLength(100, ErrorMessage = "邮箱地址最多为100个字符")]
+        public string OldEmail { get; set; }
 
         public bool Active { get; set; }
 
@@ -37,6 +43,9 @@ namespace DataBaseModel.AllEntity.UserInfo
 
         [Column(TypeName = "datetime")]
         public DateTime? LastActivityDateUtc { get; set; }
+
+        [Column(TypeName = "datetime")]
+        public DateTime? LastChangeIdentityInfoDateUtc { get; set; }
 
         [StringLength(10, ErrorMessage = "验证码最多为10个字符")]
         public string CurrentPaymentCode { get; set; }
